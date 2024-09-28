@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coaches in Abu Dhabi</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+<!-- Include Font Awesome 6 (Beta) -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOM3BbZhNR04ejBCojcB/MmZQ+/CuzjI6fDYMsiA" crossorigin="anonymous">
+    <style>
+        /* Additional styles to handle the dropdown visibility */
+        .hidden { display: none; }
+        .block { display: block; }
+		.section {margin-top: 25px;}
+    </style>
+</head>
+<body class="bg-gray-100">
+<nav class="bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700 sticky top-0 z-50">
+  <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+    <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+		KINESIOLOGY LOGO
+        <!-- <img src="logo.png" class="h-12" alt="Logo" /> -->
+        <!--<span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span> -->
+    </a>
+    <button id="menu-toggle" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-dropdown" aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+        </svg>
+    </button>
+    <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
+      <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+        <li>
+          <a href="#mi" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About us</a>
+        </li>
+        <li>
+          <a href="#nas_tim" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Our team</a>
+        </li>
+        <li>
+          <a href="#oblasti_rada" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Areas of work</a>
+        </li>
+        <li>
+          <a href="#kontakt" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<script>
+    document.getElementById('menu-toggle').addEventListener('click', function() {
+        var navDropdown = document.getElementById('navbar-dropdown');
+        navDropdown.classList.toggle('hidden');
+        var expanded = this.getAttribute('aria-expanded') === 'true' || false;
+        this.setAttribute('aria-expanded', String(!expanded));
+    });
+
+    // Close the mobile menu when a link is clicked
+    document.querySelectorAll('#navbar-dropdown a').forEach(item => {
+        item.addEventListener('click', () => {
+            var navDropdown = document.getElementById('navbar-dropdown');
+            navDropdown.classList.add('hidden');
+            var menuToggle = document.getElementById('menu-toggle');
+            menuToggle.setAttribute('aria-expanded', 'false');
+        });
+    });
+</script>
+
+<section id="mi">
+	<div class="container mx-auto p-8">
+		<div class="flex flex-col lg:flex-row items-center bg-white rounded-lg shadow-md overflow-hidden">
+			<!-- Image Section -->
+			<div class="lg:w-1/2">
+				<img src="o_nama.jpg" alt="Lawyer Image" class="w-full h-full object-cover rounded-lg">
+			</div>
+			<!-- Content Section -->
+			<div class="lg:w-1/2 p-8">
+				<h2 class="text-sm text-gray-500 uppercase tracking-wide font-semibold mb-2">About us</h2>
+				<h1 class="text-3xl font-semibold text-slate-800 mb-4">We empower individuals to achieve their ultimate potential</h1>
+				<p class="text-slate-800 mb-4">
+					Posture and Performance Center focuses on providing specialized training programs to help clients improve their posture and alleviate pain. 
+				</p>
+				<p class="text-slate-800">
+					Our services are tailored to individuals suffering from chronic pain, those with posture-related issues, and anyone looking to enhance their overall physical well-being. 
+				</p>
+				<p class="text-slate-800 mt-3">
+				Services Offered: 
+				</p>
+				<ul style="list-style-type: disc;" class="text-slate-800 ml-5">
+					<li>Personalized Posture Alignment Training</li>
+					<li>Pain Relief Exercises</li>
+					<li>Corporate Wellness Programs</li>
+					<li>Workshops and Seminars</li>
+				</ul>
+				<div class="flex items-start mb-6 mt-10">
+					<div class="text-2xl text-gray-700 mr-4">
+						<button class="flex items-center justify-center w-12 h-12 rounded-full border-2 border-gray-300 hover:border-gray-500 focus:border-blue-500 focus:outline-none transition duration-300">
+							<svg fill="#334155" height="20px" width="20px" viewBox="0 0 495.003 495.003">
+								<g id="XMLID_51_">
+								<path id="XMLID_53_" d="M164.711,456.687c0,2.966,1.647,5.686,4.266,7.072c2.617,1.385,5.799,1.207,8.245-0.468l55.09-37.616
+									l-67.6-32.22V456.687z"/>
+								<path id="XMLID_52_" d="M492.431,32.443c-1.513-1.395-3.466-2.125-5.44-2.125c-1.19,0-2.377,0.264-3.5,0.816L7.905,264.422
+									c-4.861,2.389-7.937,7.353-7.904,12.783c0.033,5.423,3.161,10.353,8.057,12.689l125.342,59.724l250.62-205.99L164.455,364.414
+									l156.145,74.4c1.918,0.919,4.012,1.376,6.084,1.376c1.768,0,3.519-0.322,5.186-0.977c3.637-1.438,6.527-4.318,7.97-7.956
+									L494.436,41.257C495.66,38.188,494.862,34.679,492.431,32.443z"/>
+								</g>
+							</svg>
+						</button>
+					</div>
+					<div>
+						<h3 class="text-lg font-semibold text-gray-900">Free Initial Consultations</h3>
+						<p class="text-gray-700">
+							We take pride in providing high-quality legal representation and advice to our clients.
+						</p>
+					</div>					
+				</div>
+				<hr class="border-gray-300 my-4">
+				<div class="flex space-x-8">
+					<div class="text-center">
+						<h4 class="text-2xl font-semibold" style="color:#af9661;">2,500+</h4>
+						<p class="text-gray-600">Successful Rehabilitation Programs</p>
+					</div>
+					<div class="text-center">
+						<h4 class="text-2xl font-semibold" style="color:#af9661;">1,800+</h4>
+						<p class="text-gray-600">Satisfied Clients</p>
+					</div>
+					<div class="text-center">
+						<h4 class="text-2xl font-semibold" style="color:#af9661;">15+</h4>
+						<p class="text-gray-600">Years of Combined Experience</p>
+					</div>
+					<div class="text-center">
+						<h4 class="text-2xl font-semibold" style="color:#af9661;">98%</h4>
+						<p class="text-gray-600">Client Satisfaction Rate</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+	
+<!-- NAS TIM -->
+<section id="nas_tim">
+<div class="container mx-auto py-12">
+        <h2 class="text-3xl font-semibold text-center mt-20 mb-12">Meet Our Coaches</h2>
+	
+		<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+
+			<!-- Attorney Card 1 -->
+            <div class="bg-white rounded-lg shadow-lg text-center">
+                <img src="osoba1.jpg" alt="Aleksandra Obradovic" class="w-full mb-4 rounded-lg">
+                <h3 class="text-xl font-semibold">Aleksa Prezime</h3>
+                <p class="text-yellow-600 mb-4">Kinesiology</p>
+                <div class="mb-4">
+                    <p class="flex items-center justify-left pl-6 mb-1">
+                        <svg class="icon icon-tabler icon-tabler-phone mr-2" width="18" height="18" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+							<path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+							<path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
+						</svg>
+                        <font class="text-base">+971558102947</font>
+                    </p>
+                    <p class="flex items-center justify-left pl-6">
+                        <svg class="icon icon-tabler icon-tabler-mail mr-2" width="18" height="18" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+							<path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+							<path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z" />
+							<path d="M3 7l9 6l9 -6" />
+						</svg>
+                        <font class="text-base">aleksabla bla @domain.com
+                    </p>
+                </div>
+                <div class="flex justify-center space-x-4"></font>
+                </div>
+            </div>
+			
+			<!-- Attorney Card 2 -->
+            <div class="bg-white rounded-lg shadow-lg text-center">
+                <img src="osoba2.jpg" alt="David Vigo Michel" class="w-full mb-4 rounded-lg">
+                <h3 class="text-xl font-semibold">Stefan Jovanović</h3>
+                <p class="text-yellow-600 mb-4">Kinesiology</p>
+                <div class="mb-4">
+                    <p class="flex items-center justify-left pl-6 mb-1">
+                        <svg class="icon icon-tabler icon-tabler-phone mr-2" width="18" height="18" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+							<path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+							<path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
+						</svg>
+                        <font class="text-base">98765-12-345</font>
+                    </p>
+                    <p class="flex items-center justify-left pl-6">
+                        <svg class="icon icon-tabler icon-tabler-mail mr-2" width="18" height="18" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+							<path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+							<path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z" />
+							<path d="M3 7l9 6l9 -6" />
+						</svg>
+                        <font class="text-base">stefanjovanovic@domain.com
+                    </p>
+                </div>
+                <div class="flex justify-center space-x-4"></font>
+                </div>
+            </div>
+			
+			<!-- Attorney Card 3 -->
+            <div class="bg-white rounded-lg shadow-lg text-center">
+                <img src="osoba3.jpg" alt="David Vigo Michel" class="w-full mb-4 rounded-lg">
+                <h3 class="text-xl font-semibold">Nemanja Savić</h3>
+                <p class="text-yellow-600 mb-4">Kinesiology</p>
+                <div class="mb-4">
+                    <p class="flex items-center justify-left pl-6 mb-1">
+                        <svg class="icon icon-tabler icon-tabler-phone mr-2" width="18" height="18" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+							<path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+							<path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
+						</svg>
+                        <font class="text-base">98765-12-345</font>
+                    </p>
+                    <p class="flex items-center justify-left pl-6">
+                        <svg class="icon icon-tabler icon-tabler-mail mr-2" width="18" height="18" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+							<path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+							<path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z" />
+							<path d="M3 7l9 6l9 -6" />
+						</svg>
+                        <font class="text-base">nemanjasavic@domain.com
+                    </p>
+                </div>
+                <div class="flex justify-center space-x-4"></font>
+                </div>
+            </div>
+			
+			<!-- Attorney Card 4 -->
+            <div class="bg-white rounded-lg shadow-lg text-center">
+                <img src="osoba4.jpg" alt="David Vigo Michel" class="w-full mb-4 rounded-lg">
+                <h3 class="text-xl font-semibold">Marija Shomwi</h3>
+                <p class="text-yellow-600 mb-4">Kinesiology</p>
+                <div class="mb-4">
+                    <p class="flex items-center justify-left pl-6 mb-1">
+                        <svg class="icon icon-tabler icon-tabler-phone mr-2" width="18" height="18" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+							<path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+							<path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
+						</svg>
+                        <font class="text-base">98765-12-345</font>
+                    </p>
+                    <p class="flex items-center justify-left pl-6">
+                        <svg class="icon icon-tabler icon-tabler-mail mr-2" width="18" height="18" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+							<path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+							<path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z" />
+							<path d="M3 7l9 6l9 -6" />
+						</svg>
+                        <font class="text-base">marijashomwi@domain.com
+                    </p>
+                </div>
+                <div class="flex justify-center space-x-4"></font>
+                </div>
+            </div>			
+			
+			
+		</div>
+</div>
+</section>
+<section id="oblasti_rada">
+	    <div class="container mx-auto p-8">
+			<h2 class="text-3xl font-semibold text-center mt-20 mb-8">Areas of work</h2>
+		<div class="grid md:grid-cols-3 gap-6">
+            <!-- Rešavanje sporova Card -->
+            <div class="bg-white rounded-lg shadow-md  border-t-4 border-yellow-600">
+                <h2 class="bg-slate-700 text-xl font-semibold text-gray-100 text-center mb-1 p-7 rounded-t-lg tracking-wide">Kinesiology</h2>
+                <p class="text-center text-justify text-gray-900 font-semibold pt-5 px-7">
+					The science of human movement aimed at improving health. We deal with kinesiology of the spine, lower extremities and muscle imbalances that disrupt the integrity of the body.
+				</p>
+            </div>
+            <!-- Privredno pravo Card -->
+            <div class="bg-white rounded-lg shadow-md border-t-4 border-yellow-600">
+				<h2 class="bg-slate-700 text-xl font-semibold text-gray-100 text-center mb-1 p-7 rounded-t-lg tracking-wide">Strength Training</h2>
+				<p class="text-center text-justify text-gray-900 font-semibold pt-5 px-7">
+				  Focused on building muscle strength and endurance through personalized workout plans. We help you achieve physical fitness and structural balance.
+				</p>
+            </div>
+            <!-- Pravo informacionih tehnologija Card -->
+            <div class="bg-white rounded-lg shadow-md border-t-4 border-yellow-600">
+				<h2 class="bg-slate-700 text-xl font-semibold text-gray-100 text-center mb-1 p-7 rounded-t-lg tracking-wide">Posture Correction</h2>
+				<p class="text-center text-justify text-gray-900 font-semibold pt-5 px-7">
+				  Improve your posture and alleviate discomfort through targeted exercises that correct imbalances, realign the body, and enhance physical function.
+				</p>				
+            </div>
+            <!-- Radno pravo Card -->
+            <div class="bg-white rounded-lg shadow-md border-t-4 border-yellow-600">
+				<h2 class="bg-slate-700 text-xl font-semibold text-gray-100 text-center mb-1 p-7 rounded-t-lg tracking-wide">Weight Management</h2>
+				<p class="text-center text-justify text-gray-900 font-semibold pt-5 px-7">
+				  Personalized plans for achieving and maintaining a healthy weight. We provide guidance on nutrition, exercise, and lifestyle changes for lasting results.
+				</p>				
+            </div>
+            <!-- Ugovorno pravo Card -->
+            <div class="bg-white rounded-lg shadow-md border-t-4 border-yellow-600">
+                <h2 class="bg-slate-700 text-xl font-semibold text-gray-100 text-center mb-1 p-7 rounded-t-lg tracking-wide">Breathing and Relaxation Techniques</h2>
+				<p class="text-center text-justify text-gray-900 font-semibold pt-5 px-7">
+  					Learn techniques to reduce stress, improve breathing patterns, and enhance relaxation. This practice promotes mental clarity and physical calmness.
+				</p>
+            </div>
+            <!-- Poresko pravo Card -->
+            <div class="bg-white rounded-lg shadow-md border-t-4 border-yellow-600">
+                <h2 class="bg-slate-700 text-xl font-semibold text-gray-100 text-center mb-1 p-7 rounded-t-lg tracking-wide">Lifestyle and Habit Coaching</h2>
+					<p class="text-center text-justify text-gray-900 font-semibold pt-5 px-7">
+  						Focused on helping you develop positive habits and sustainable lifestyle changes. We work together to improve productivity, well-being, and life satisfaction.
+					</p>
+            </div>
+            <!-- Pravo intelektualne svojine Card -->
+            <div class="bg-white rounded-lg shadow-md border-t-4 border-yellow-600">
+                <h2 class="bg-slate-700 text-xl font-semibold text-gray-100 text-center mb-1 p-7 rounded-t-lg tracking-wide">Sports Performance Coaching</h2>
+				<p class="text-center text-justify text-gray-900 font-semibold pt-5 px-7">
+  					Designed to enhance athletic performance. We create sport-specific training plans to improve speed, strength, agility, and endurance.
+				</p>
+            </div>
+            <!-- Nekretnosti i imovinskopravni odnosi Card -->
+            <div class="bg-white rounded-lg shadow-md border-t-4 border-yellow-600">
+                <h2 class="bg-slate-700 text-xl font-semibold text-gray-100 text-center mb-1 p-7 rounded-t-lg tracking-wide">Recovery and Rehabilitation</h2>
+				<p class="text-center text-justify text-gray-900 font-semibold pt-5 px-7">
+  					Specialized recovery programs for injury rehabilitation and physical therapy. We help you regain strength, flexibility, and overall function.
+				</p>
+            </div>
+            <!-- Porodično i nasledno pravo Card -->
+            <div class="bg-white rounded-lg shadow-md border-t-4 border-yellow-600">
+                <h2 class="bg-slate-700 text-xl font-semibold text-gray-100 text-center mb-1 p-7 rounded-t-lg tracking-wide">Mental Health Coaching</h2>
+				<p class="text-center text-justify text-gray-900 font-semibold pt-5 px-7">
+  				A holistic approach to mental wellness. We help individuals manage stress, anxiety, and promote emotional balance and clarity.
+				</p>
+
+
+            </div>
+            <!-- Naknada štete Card -->
+            <div class="bg-white rounded-lg shadow-md  border-t-4 border-yellow-600">
+                <h2 class="bg-slate-700 text-xl font-semibold text-gray-100 text-center mb-1 p-7 rounded-t-lg tracking-wide">Flexibility Training</h2>
+				<p class="text-center text-justify text-gray-900 font-semibold pt-5 px-7">
+  					Improve your range of motion and mobility through customized flexibility programs. Our approach enhances movement and prevents injury.
+				</p>
+            </div>
+            <!-- Krivično pravo Card -->
+            <div class="bg-white rounded-lg shadow-md border-t-4 border-yellow-600">
+				<h2 class="bg-slate-700 text-xl font-semibold text-gray-100 text-center mb-1 p-7 rounded-t-lg tracking-wide">Cardio Fitness Training</h2>
+				<p class="text-center text-justify text-gray-900 font-semibold pt-5 px-7">
+				  Focus on improving heart health and endurance through personalized cardiovascular exercises. Our goal is to enhance your stamina and overall fitness.
+				</p>				
+            </div>
+			<!-- Krivično pravo Card -->
+			<div class="bg-white rounded-lg shadow-md border-t-4 border-yellow-600">
+				<h2 class="bg-slate-700 text-xl font-semibold text-gray-100 text-center mb-1 p-7 rounded-t-lg tracking-wide">Neuromuscular Re-education</h2>
+				<p class="text-center text-justify text-gray-900 font-semibold pt-5 px-7">
+  					Techniques aimed at restoring movement patterns and muscle function after injury or dysfunction. We focus on improving coordination between muscles and nerves for optimal performance.
+				</p>
+			</div>
+			<div class="bg-white rounded-lg shadow-md border-t-4 border-yellow-600">
+				<h2 class="bg-slate-700 text-xl font-semibold text-gray-100 text-center mb-1 p-7 rounded-t-lg tracking-wide">Gait Analysis and Correction</h2>
+				<p class="text-center text-justify text-gray-900 font-semibold pt-5 px-7">
+  				Comprehensive evaluation of walking patterns to identify and correct abnormalities. Our programs are designed to enhance mobility and reduce pain associated with improper gait.
+				</p>
+			</div>
+			<div class="bg-white rounded-lg shadow-md border-t-4 border-yellow-600">
+				<h2 class="bg-slate-700 text-xl font-semibold text-gray-100 text-center mb-1 p-7 rounded-t-lg tracking-wide">Vestibular Rehabilitation</h2>
+				<p class="text-center text-justify text-gray-900 font-semibold pt-5 px-7">
+  				Focused on treating balance disorders and dizziness through specialized exercises. We help retrain the brain and body to improve stability and spatial orientation.
+				</p>
+			</div>
+			<div class="bg-white rounded-lg shadow-md border-t-4 border-yellow-600">
+				<h2 class="bg-slate-700 text-xl font-semibold text-gray-100 text-center mb-1 p-7 rounded-t-lg tracking-wide">Functional Movement Screening</h2>
+				<p class="text-center text-justify text-gray-900 font-semibold pt-5 px-7">
+  				Assessment of fundamental movement patterns to detect limitations or asymmetries. Our tailored programs address these issues to enhance functional performance and reduce injury risk.
+				</p>
+			</div>
+			<div class="bg-white rounded-lg shadow-md border-t-4 border-yellow-600">
+				<h2 class="bg-slate-700 text-xl font-semibold text-gray-100 text-center mb-1 p-7 rounded-t-lg tracking-wide">Chronic Pain Management</h2>
+				<p class="text-center text-justify text-gray-900 font-semibold pt-5 px-7">
+				  Specialized strategies to alleviate and manage long-term pain conditions. Our approach focuses on restoring quality of life through targeted movement therapies and pain relief techniques.
+				</p>				
+			</div>
+        </div>
+    </div>
+</section>
+<section id="kontakt">	
+	
+<div class="max-w-7xl mx-auto p-6">
+<h2 class="text-3xl font-semibold text-center mt-20 mb-8">Kontakt</h2>
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+
+            <div class="mb-6">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.837358669894!2d-74.00912598459072!3d40.72037994312716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a316b3c5b71%3A0x8f5b0be96e2e0f84!2s121%20King%20St%2C%20New%20York%2C%20NY%2010013%2C%20USA!5e0!3m2!1sen!2sin!4v1633280517406!5m2!1sen!2sin" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+			<div class="flex flex-col md:flex-row">
+                <div class="md:w-full lg:w-2/3">
+					<h2 class="text-2xl font-bold">Contact Our Coaching Team</h2>
+					<p class="text-gray-600 mb-6">Send us a message. We will get back to you as soon as possible.</p>					
+                    <form action="#" method="POST" class="space-y-4 mb-9">
+                        <!--<div class="flex space-x-4"> -->
+						<div class="flex flex-col lg:flex-row lg:space-x-4">
+                            <input type="text" name="name" placeholder="Your Name (*)" required class="lg:w-1/2 w-full  p-3 bg-gray-200 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-600 mb-4 lg:mb-0">
+                            <input type="email" name="email" placeholder="Your Email (*)" required class="lg:w-1/2 w-full p-3 bg-gray-200 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-600">
+                        </div>
+                        <input type="text" name="subject" placeholder="Subject" class="w-full p-3 bg-gray-200 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-600">
+                        <textarea name="message" placeholder="Your Message" class="w-full p-3 bg-gray-200 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-600"></textarea>
+                        <button type="submit" class="px-6 py-3 bg-slate-700 text-white rounded-md hover:bg-slate-800">Send Message</button>
+                    </form>
+                </div>
+                <div class="md:w-full lg:w-1/3 lg:pl-6 md:pl-3 space-y-4">
+                    <div class="flex items-center space-x-2 lg:mt-20">
+                        <div class="text-gray-900 p-2 rounded-full border-2 border-gray-300">
+                            <svg class="icon icon-tabler icon-tabler-phone" width="18" height="18" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+								<path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+								<path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
+							</svg>
+                        </div>
+                        <div>
+                            <p class="font-bold">Phone number</p>
+                            <p class="text-gray-600">+381 33 44 55</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <div class="text-gray-900 p-2 rounded-full border-2 border-gray-300">
+                            <svg class="icon icon-tabler icon-tabler-mail" width="18" height="18" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+								<path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+								<path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z" />
+								<path d="M3 7l9 6l9 -6" />
+							</svg>
+                        </div>
+                        <div>
+                            <p class="font-bold">Email</p>
+                            <p class="text-gray-600">info@coaches.com</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <div class="text-gray-900 p-2 rounded-full border-2 border-gray-300">
+						<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="18" height="18" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+							<path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+							<path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+							<path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
+						</svg>
+                        </div>
+                        <div>
+                            <p class="font-bold">Office</p>
+                            <p class="text-gray-600">Trg Jakaba i Komora 28, Beograd Srbija</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+</section>
+</body>
+</html>
+
+<!--
+<script>
+    document.getElementById('menu-toggle').addEventListener('click', function() {
+        var navDropdown = document.getElementById('navbar-dropdown');
+        navDropdown.classList.toggle('hidden');
+        navDropdown.classList.toggle('block');
+    });
+
+    document.getElementById('dropdownNavbarLink').addEventListener('click', function() {
+        var dropdownMenu = document.getElementById('dropdownNavbar');
+        dropdownMenu.classList.toggle('hidden');
+        dropdownMenu.classList.toggle('block');
+    });
+</script>
+-->
